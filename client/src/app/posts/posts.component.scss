@@ -1,0 +1,11 @@
+.search-post { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  height: calc(100% - 64px);
+  
+  & .mat-form-field {
+    margin-right: 24px;
+  }
+}
