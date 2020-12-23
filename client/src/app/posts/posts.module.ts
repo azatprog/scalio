@@ -17,8 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
     PostsRoutingModule,
     MatInputModule,
     MatButtonModule
-  ]
-  ,
+  ],
   exports: [
     MatInputModule,
     MatButtonModule

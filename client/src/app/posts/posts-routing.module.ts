@@ -6,7 +6,10 @@ import { PostsComponent } from './posts.component';
 const routes: Routes = [{ path: '', component: PostsComponent }];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forChild(routes)
+  ],
+  exports: [RouterModule],
+  providers: []
 })
 export class PostsRoutingModule { }

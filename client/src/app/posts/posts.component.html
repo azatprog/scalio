@@ -10,4 +10,5 @@
     </mat-form-field>
     <button type="submit" mat-raised-button color="primary"> Send </button>
   </form>
+  <mat-error *ngIf="errorText"> {{errorText}} </mat-error>
 </div>

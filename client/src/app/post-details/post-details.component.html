@@ -1,1 +1,14 @@
-<p>post-details works!</p>
+<a mat-button (click)="goToMain()">
+  <span class="material-icons">
+    keyboard_backspace
+  </span> Go home
+</a>
+
+<ng-container *ngIf="post">
+  <mat-card class="post-detail">
+    <mat-card-title> {{ post.title }} </mat-card-title>
+    <mat-card-content>
+      <p> {{ post.body }} </p>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
