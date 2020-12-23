@@ -1,9 +1,13 @@
 <div class="search-post">
-  <form>
+  <form novalidate (ngSubmit)="getPost()" [formGroup]="postForm">
     <mat-form-field>
       <mat-label>Post ID</mat-label>
-      <input matInput placeholder="Type post id">
+      <input matInput 
+        formControlName="postId"
+        placeholder="Type post id" 
+        type="number" 
+        aria-label="post search field">
     </mat-form-field>
-    <button mat-raised-button color="primary"> Send </button>
+    <button type="submit" mat-raised-button color="primary"> Send </button>
   </form>
 </div>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { PostsRoutingModule } from './posts-routing.module';
 import { PostsComponent } from './posts.component';
@@ -11,6 +12,8 @@ import { MatButtonModule } from '@angular/material/button';
   declarations: [PostsComponent],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     PostsRoutingModule,
     MatInputModule,
     MatButtonModule
